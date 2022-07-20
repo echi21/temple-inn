@@ -42,19 +42,16 @@
     grid-template-columns: 1fr 1fr 1fr;
   }
 
-  #hero-box {
+  #hero-box,
+  #reservation-one-bed-image-box {
     grid-column: 1 / 4;
-    /*width: 90%; /*1142px;*/
-    max-height: 38.5rem; /*616px;*/
-    /* margin: 0 auto;
-     /*grid-row: 1 / 3;*/
+    max-height: 38rem; /*616px;*/
   }
 
-  #hero-box h2 {
+  #hero-box h2,
+  #reservation-one-bed-image-box h2 {
     font-size: 2.8rem;
-    /*top: 50px;
-    left: 40px;*/
-    right: 100px;
+    right: 100px
   }
 
   #hero-box button {
@@ -62,13 +59,8 @@
     font-size: 1.8rem;
   }
 
-
   #welcome-image-box {
     grid-column: 2 / 4;
-    /*width: 90%; /*1142px;*/
-    /* max-height: 38.5rem; /*616px;*/
-    /* margin: 0 auto;
-     /*grid-row: 1 / 3;*/
   }
 
   #welcome-text-box {
@@ -89,10 +81,9 @@
     grid-column: 3 / 4;
   }
 
-
-
-
-
+  #join-box p {
+    margin-top: 4rem;
+  }
 
 
   /*--------------------.styling-button--------------------*/

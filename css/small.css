@@ -136,9 +136,9 @@ header {
   /*margin: .5rem;*/
 }
 
-
-
-h1, h2, h3 {
+h1,
+h2,
+h3 {
   font-family: var(--heading-font);
 }
 
@@ -231,6 +231,7 @@ nav ul.open {
 #hamburger-btn.open span:nth-child(2) {
   display: block;
 }
+
 /*************************************************/
 
 #index-main-grid {
@@ -256,7 +257,6 @@ nav ul.open {
 #index-main-grid h2 {
   text-align: center;
   color: var(--secondary-color);
-  /*text-shadow: 0 0 3px var(--accent2-color);*/
   margin: 1rem 0;
   z-index: 2;
 }
@@ -310,7 +310,8 @@ nav ul.open {
   100% {transform: scale(1,1);}
 }
 
-#hero-box h2 {
+#hero-box h2,
+#reservation-one-bed-image-box h2 {
   position: absolute;
   font-size: 1.6rem;
   top: 20px;
@@ -318,7 +319,6 @@ nav ul.open {
   color: var(--primary-color);
   background-color: transparent;
   text-shadow: 0 0 10px black;
-  /*text-decoration-line: underline;*/
 }
 
 #hero-box button {
@@ -668,6 +668,19 @@ nav ul.open {
   margin-left: 1rem;
 }
 
+
+
+
+
+
+
+
+
+
+
+
+
+
 /*------------------------RESERVATION.HTML----------------------*/
 #reservation-main {
   max-width: 90%;
@@ -695,6 +708,22 @@ nav ul.open {
   padding: .5rem;
 }
 
+#reservation-one-bed-image-box {
+  position: relative;
+}
+
+#reservation-one-bed-image-box,
+#reservation-two-beds-image-box {
+  overflow: hidden;
+}
+
+#reservation-one-bed-image-box img,
+#reservation-two-beds-image-box img {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+
 /*--------------------------form-------------------------*/
 
 #reservation-form,
@@ -708,21 +737,11 @@ nav ul.open {
   border: 2px solid var(--secondary-color);
 }
 
-#membership-descriptions,
+#reservation-one-bed-image-box,
 .contact-board-of-info {
   margin: 1.65rem auto 1rem auto;
   /*padding: .5rem;*/
   border: 2px solid var(--secondary-color);
-}
-
-#reservation-form #membership-descriptions {
-  overflow: hidden;
-}
-
-#membership-descriptions img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
 }
 
 #reservation-form legend,
@@ -798,6 +817,13 @@ nav ul.open {
   color: var(--accent2-color);
   border-radius: 2rem;
 }
+
+
+
+
+
+
+
 
 /*-----------------------CONTACT.HTML--------------------*/
 #contact-main {

@@ -1,15 +1,12 @@
-
-// city ID for Balcarce = 3436177
 // select HTML elements to edit
 const CURRENT_TEMP = document.querySelector('#temperature');
 const PICTURE_SOURCE = document.querySelector("#temperature-unit source");
 const DESC_PARAGRAPH = document.querySelector("#weather-comment");
 const WIND_SPEED = document.querySelector("#wind-speed");
 const WIND_CHILL = document.querySelector("#wind-chill");
-//const WEB_ADDRESS = "https://api.openweathermap.org/data/2.5/weather?id=3436177&appid=daa8fefb9b8b808182b2ade02804a280&units=imperial";
 const WEB_ADDRESS = "https://api.openweathermap.org/data/2.5/onecall?lat=-37.846161&lon=-58.255219&exclude=minutely,hourly&appid=daa8fefb9b8b808182b2ade02804a280&units=metric"
 let celsiusTemp, weatherIcon, weatherDescription, humidity, windChillOrValue , weatherAlert;
-let forecast = [];
+let forecastTemp = [];
 
 
 async function main(url) {
@@ -68,13 +65,22 @@ function calculateAndSetValues(weatherData) {
 
   weatherData.daily.forEach((oneDay, index) => {
     if (index > 0) {
-      forecast.push(oneDay.temp.day);
+      forecastTemp.push(oneDay.temp.day);
     }
   });
 
-  console.log(forecast);
+  console.log(forecastTemp);
   weatherAlert = weatherData;
 
+}
+/*-------------------------------------------------------------------------------------------------------------------*/
+function prepareForecast() {
+  let uLElement = document.querySelector("#weather-forecast");
+  forecastTemp.forEach(temp => {
+    let liElement = document.createElement("div");
+    liElement.textContent = `${temp.toFixed(0)} °C`;
+    uLElement.appendChild(liElement);
+  });
 }
 
 /*-------------------------------------------------------------------------------------------------------------------*/
@@ -83,8 +89,8 @@ function renderContent() {
   CURRENT_TEMP.innerHTML = `<strong>${celsiusTemp}</strong>`;
   DESC_PARAGRAPH.innerHTML = `<strong>${weatherDescription}</strong>`;
   WIND_SPEED.textContent = humidity;
-  //WIND_SPEED.textContent = kphWindSpeed.toFixed(1);
   WIND_CHILL.textContent = windChillOrValue;
+  prepareForecast();
 }
 /*-------------------------------------------------------------------------------------------------------------------*/
 
