@@ -1,0 +1,74 @@
+[
+  {
+    "name" : "Mc Cain",
+    "address" : "Km. 61.5, Route 226",
+    "phoneNumber" : "(54 2266) - 439900",
+    "webAddress" : "http://www.mccain.com.ar",
+    "image" : "images/companies/mc-cain.webp",
+    "membershipLevel" : "Gold Membership"
+  },
+  {
+    "name" : "Guolis",
+    "address" : "#741, Av. Kelly",
+    "phoneNumber" : "(54 2266) - 15475151",
+    "webAddress" : "https://guolis.com.ar",
+    "image" : "images/companies/guolis.webp",
+    "membershipLevel" : "Silver Membership"
+  },
+  {
+    "name" : "AgriGlobal",
+    "address" : "#660, Street 16, 1st Floor, office 1",
+    "phoneNumber" : "(54 2266) - 424870",
+    "webAddress" : "https://agri.global",
+    "image" : "images/companies/agri-global.webp",
+    "membershipLevel" : "Gold Membership"
+  },
+  {
+    "name" : "Caracol",
+    "address" : "#588, Street 17",
+    "phoneNumber" : "(54 2266) - 425054",
+    "webAddress" : "https://www.caracoldigital.com.ar",
+    "image" : "images/companies/caracol.webp",
+    "membershipLevel" : "Bronze Membership"
+  },
+  {
+    "name" : "Banfi Hnos",
+    "address" : "#536, Street 21",
+    "phoneNumber" : "(54 2266) - 423262",
+    "webAddress" : "http://www.banfihnos.com.ar",
+    "image" : "images/companies/banfi.webp",
+    "membershipLevel" : "Silver Membership"
+  },
+  {
+    "name" : "Procemaq",
+    "address" : "#3298, Av. San Martín",
+    "phoneNumber" : "(54 2266) - 432264",
+    "webAddress" : "http://procemaq.com/site2019",
+    "image" : "images/companies/procemaq.webp",
+    "membershipLevel" : "Silver Membership"
+  },
+  {
+    "name" : "Humeplac",
+    "address" : "#525, Av. del Valle",
+    "phoneNumber" : "(54 2266) - 423112",
+    "webAddress" : "https://humeplac.com",
+    "image" : "images/companies/humeplac.webp",
+    "membershipLevel" : "Bronze Membership"
+  },
+  {
+    "name" : "Gauchitas",
+    "address" : "Km 79.4, Route 55",
+    "phoneNumber" : "(54 2266) - 639179",
+    "webAddress" : "https://www.gauchitas.com.ar",
+    "image" : "images/companies/gauchitas.webp",
+    "membershipLevel" : "Gold Membership"
+  },
+  {
+    "name" : "Capei",
+    "address" : "Km. 61, Route 226",
+    "phoneNumber" : "(54 2266) - 15527379",
+    "webAddress" : "http://www.capei.com.ar",
+    "image" : "images/companies/capei.webp",
+    "membershipLevel" : "Silver Membership"
+  }
+]

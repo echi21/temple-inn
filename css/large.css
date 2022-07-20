@@ -1,0 +1,163 @@
+/* 64em is also 1028px when basefont is 16px */
+@media only screen and (min-width: 72rem) {
+
+  #logo-box img {
+    width: 8rem;
+  }
+
+  h1 {
+    font-size: 4rem;
+  }
+
+  h2 {
+    font-size: 1.5rem;
+  }
+
+  h3 {
+    font-size: 1.2rem;
+  }
+  /***********************************************/
+
+  #title-box p {
+    font-size: 1.2rem;
+  }
+
+  #primary-nav li {
+    width: 8rem;
+    text-align: center;
+  }
+
+  #primary-nav a {
+    font-size: 1.3rem;
+    padding: .5rem;
+  }
+
+  #social-box img {
+    width: 2.5rem;
+  }
+
+  /***********************************************/
+
+  #index-main-grid {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+
+  #hero-box {
+    grid-column: 1 / 4;
+    /*width: 90%; /*1142px;*/
+    max-height: 38.5rem; /*616px;*/
+    /* margin: 0 auto;
+     /*grid-row: 1 / 3;*/
+  }
+
+  #hero-box h2 {
+    font-size: 2.8rem;
+    /*top: 50px;
+    left: 40px;*/
+    right: 100px;
+  }
+
+  #hero-box button {
+    width: 18rem;
+    font-size: 1.8rem;
+  }
+
+
+  #welcome-image-box {
+    grid-column: 2 / 4;
+    /*width: 90%; /*1142px;*/
+    /* max-height: 38.5rem; /*616px;*/
+    /* margin: 0 auto;
+     /*grid-row: 1 / 3;*/
+  }
+
+  #welcome-text-box {
+    grid-column: 1 / 2;
+    grid-row: 2 / 3;
+  }
+
+  #welcome-image-box {
+    grid-column: 2 / 4;
+    grid-row: 2 / 3;
+  }
+
+  #temple-image-box {
+    grid-column: 1 / 3;
+  }
+
+  #temple-text-box {
+    grid-column: 3 / 4;
+  }
+
+
+
+
+
+
+
+  /*--------------------.styling-button--------------------*/
+
+  #hero-box .styling-button:hover,
+  #join-box .styling-button:hover,
+  #join-form #join-submit-btn:hover,
+  #contact-form #contact-submit-btn:hover {
+    color: var(--secondary-color);
+    border-color: var(--accent2-color);
+    background-color: var(--primary-color);
+    box-shadow: 1px 1px 5px 5px rgba(0,0,0,0.24);
+    cursor: pointer;
+  }
+
+  /*--------------------DISCOVER.HTML--------------------*/
+
+  #discover-main-grid p {
+    font-size: 1.2rem;
+  }
+
+
+  /*-----------------------CONTACT.HTML---------------------*/
+  #contact-form {
+    max-width: 50%;
+  }
+
+  /*--------------------------footer-----------------------*/
+  footer p {
+    margin: 4rem;
+  }
+
+  footer hr {
+    display: none;
+  }
+
+  footer ul li.links-hover-effect {
+    /*width: 120px;*/
+    height: 30px;
+  }
+
+  #find-us {
+    width: 78px;
+  }
+
+  #footer-main-box2 .links-hover-effect #open-weather-width {
+    width: 400px;
+    height: 30px;
+  }
+
+  #footer-main-box1 a:hover,
+  #footer-main-box2 a:hover {
+    border: 1px dotted var(--secondary-color);
+    font-size: 1.1rem;
+    transition: all ease 400ms;
+  }
+
+  #footer-last-line {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+  }
+
+  #footer-last-line p {
+    margin: 0;
+  }
+
+}

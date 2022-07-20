@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Merriweather&family=Poppins">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/small.css">
+    <link rel="stylesheet" href="css/medium.css">
+    <link rel="stylesheet" href="css/large.css">
+    <link rel="icon" href="favicon3-48x48.ico">
+    <title>Directory - Balcarce Chamber of Commerce</title>
+    <meta name="author" content="Ezequiel Iannone">
+    <meta name="description" content="This is the home page of a chamber of commerce. Users will commonly enter to the
+    website through this page. They can read about some news and visit other web pages through links attached here.">
+    <script src="js/script.js" defer></script>
+    <script src="js/directory.js" defer></script>
+  </head>
+  <body>
+    <div class="banner">&#129309;<span>Come join us for the chamber meet and greet Wednesday at 7:00 p.m.</span>
+    </div>
+    <header>
+      <div id="header-box1">
+        <div id="logo-title-box">
+          <div id="logo-box">
+            <a href="../chamber/">
+              <picture>
+                <source srcset="images/chamber-logo.webp">
+                <img src="images/chamber-logo.png" alt="Logo image">
+              </picture>
+            </a>
+          </div>
+          <div id="title-box">
+            <h1>Balcarce</h1>
+            <p>Chamber of</p>
+            <p>Commerce</p>
+          </div>
+        </div>
+        <nav>
+          <button id="hamburger-btn"><span>&#9776;</span><span>X</span></button>
+          <ul id="primary-nav">
+            <li><a href="../chamber/">Home</a></li>
+            <li><a href="discover.html">Discover</a></li>
+            <li class="active"><a href="directory.html">Directory</a></li>
+            <li><a href="join.html">Join</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </nav>
+        <div id="social-box">
+          <a href="https://www.facebook.com/" target="_blank">
+            <img src="images/facebook-circle-64x64.png" alt="return">
+          </a>
+          <a href="https://www.linkedin.com/" target="_blank">
+            <img src="images/linkedin-circle-64x64.png" alt="return">
+          </a>
+        </div>
+      </div>
+      <nav>
+        <ul id="secondary-nav">
+          <li><a href="../chamber/">Home</a></li>
+          <li><a href="discover.html">Discover</a></li>
+          <li class="active"><a href="directory.html">Directory</a></li>
+          <li><a href="join.html">Join</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+      <div id="header-box2">
+        <span id="current-date"></span>
+      </div>
+    </header>
+    
+    <main id="directory-main">
+      <h2>Business Directory</h2>
+      <div class="menu">
+        <div>
+          <button id="grid-btn"><img src="images/companies/grid-48-y.png" alt="Grid" title="Grid"></button>
+          <p>Show Grid</p>
+        </div>
+        <div>
+          <button id="list-btn"><img src="images/companies/list-48-y.png" alt="List" title="List"></button>
+          <p>Show List</p>
+        </div>
+      </div>
+      
+      <div id="directory-cards">
+        
+        <!--here will be placed all the section elements-->
+        
+      </div>
+      
+    </main>
+    <footer>
+      <div id="footer-main-box1">
+        <div id="footer-logo-address-box">
+          <div id="footer-logo-box">
+            <picture>
+              <source srcset="images/chamber-logo.webp">
+              <img src="images/chamber-logo.png" alt="Logo image">
+            </picture>
+          </div>
+          <div id="footer-address-box">
+            <h2>Balcarce Chamber of Commerce</h2>
+            <p>Street 20 #696</p>
+            <p>Balcarce, Buenos Aires</p>
+          </div>
+        </div>
+        <hr id="footer-first-hr">
+        <div id="footer-email-box">
+          <p>bcchamber@balcarce.com</p>
+          <p>801-937-9702</p>
+          <p>
+            <a href="https://goo.gl/maps/x6iPCbz1PKaGqkwe8" target="_blank"><span>&#x1F5FA;</span> Location Map</a>
+          </p>
+        </div>
+      </div>
+      <div id="footer-main-box2">
+        <hr>
+        <p>&copy; <span id="year"></span>
+          Balcarce Chamber of Commerce - C. Ezequiel Iannone - WDD 230 Project - <span id="updated-date"></span>
+        </p>
+      </div>
+    </footer>
+  </body>
+</html>

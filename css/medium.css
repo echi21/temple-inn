@@ -1,0 +1,369 @@
+/* 35rem is also 560px when basefont is 16px */
+@media only screen and (min-width: 54rem) {
+
+  #header-box1 {
+    /*width: 90%;*/
+    /*margin: 0 auto;*/
+    text-align: right;
+  }
+
+  #header-box2 {
+    justify-content: space-between;
+  }
+/*
+  #logo-title-box {
+    width: initial;
+  }*/
+/*
+  #logo-title-box {
+    flex-direction: row;
+  }*/
+
+  #logo-box {
+    order: 1;
+  }
+
+  #title-box {
+    order: 2;
+  }
+
+  #logo-box img {
+    width: 7rem;
+  }
+
+  h1 {
+    font-size: 3rem;
+  }
+
+  h2 {
+    font-size: 1.3rem;
+  }
+
+  h3 {
+    font-size: 1.1rem;
+  }
+
+  #title-box p {
+    font-size: 1.1rem;
+  }
+
+  #social-box {
+    display: flex;
+    flex-direction: row;
+    order: 3;
+  }
+
+  /*******************************************************************************************************************/
+
+  nav {
+    padding: .5rem;
+    order: 0;
+    /*text-align: right;*/
+  }
+
+  nav button
+  /*#primary-nav*/ {
+    display: none;
+  }
+
+  #primary-nav {
+    display: flex;
+    justify-content: right;
+    align-items: center;
+    text-align: center;
+  }
+
+  #primary-nav li {
+    width: 6rem;
+    text-align: center;
+  }
+
+  #primary-nav a {
+    border: none;
+    font-size: 1.1rem;
+  }
+
+  #social-box img {
+    width: 2rem;
+  }
+  /*******************************************************************************************************************/
+/*
+  #index-main-grid {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+
+  #hero-box {
+    grid-column: 1 / 4;
+  }
+
+  #hero-box h2 {
+    font-size: 2.6rem;
+    /*top: 50px;
+    left: 40px;
+    right: 30px;
+  }
+
+  #hero-box button {
+    width: 14rem;
+    font-size: 1.4rem;
+  }
+
+  #welcome-text-box {
+    grid-column: 1 / 2;
+    grid-row: 2 / 3;
+  }
+
+  #welcome-image-box {
+    grid-column: 2 / 4;
+    grid-row: 2 / 3;
+  }
+
+  #temple-image-box {
+    grid-column: 1 / 3;
+  }
+
+  #temple-text-box {
+    grid-column: 3 / 4;
+  }
+*/
+
+  /*********************************************************/
+/*
+  #weather-box {
+    grid-column: span 1;
+    /*grid-row: 5 / 6;
+  }
+
+/*
+  #weather-forecast-box {
+    grid-column: 2 / 3;
+  }
+*/
+
+  #welcome-text-box,
+  #welcome-image-box,
+  #temple-text-box,
+  #temple-image-box,
+  #weather-box,
+  #weather-forecast-box,
+  #join-box {
+    margin-top: 4rem;
+  }
+
+
+
+
+
+
+
+/*************************************************/
+ /* #join-box {
+    grid-column: 3 / 4;
+    /*display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }*/
+
+  #join-box p {
+    margin-top: 4rem;
+  }
+
+
+  #join-box button {
+    width: 10rem;
+  }
+
+
+/*--------------------DISCOVER.HTML--------------------*/
+  #discover-main-grid {
+    grid-template-columns: 1fr 2fr;
+  }
+
+  #discover-main-grid div {
+    margin: .5rem;
+  }
+
+ #discover-main-grid p {
+    font-size: 1.1rem;
+  }
+
+  #statistics #first-div p {
+    text-align: left;
+  }
+
+  .card img:hover,
+  #census img:hover,
+  #climate-table img:hover {
+    /*transform: rotate(-2deg);*/
+    box-shadow: 1px 1px 100px gray;
+  }
+
+  /*---------------------DIRECTORY.HTML--------------------*/
+  #directory-main .list {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  #directory-main .list section {
+    width: 100%;
+    height: 100px;
+    display: flex;
+    align-items: center;
+  }
+
+  #directory-main .list h3 {
+    margin: 0;
+    padding-left: 1rem;
+    width: 20%;
+    text-align: left;
+  }
+
+  #directory-main .list p {
+    margin: 0;
+    padding-left: 1rem;
+    width: 20%;
+    text-align: left;
+  }
+
+  /*-----------------------JOIN.HTML---------------------*/
+  #join-main {
+    max-width: 80%;
+  }
+
+  #join-form {
+    display: grid;
+    grid-template-columns: 1fr 1fr .5fr;
+    grid-gap: 1rem;
+    justify-content: center;
+  }
+
+  #join-form fieldset {
+    grid-column: 1 / 2;
+    margin: 1rem 0;
+  }
+
+  #join-form #membership-descriptions {
+    grid-column: 2 / 4;
+  }
+
+  #join-form #join-submit-btn {
+    grid-column: 1 / 2;
+  }
+
+  #membership-descriptions,
+  .contact-board-of-info {
+    padding: 2rem;
+  }
+
+  /*-----------------------CONTACT.HTML--------------------*/
+  #contact-main {
+    max-width: 75%;
+  }
+
+  #contact-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  #contact-image-box {
+    grid-column: 1 / 2;
+  }
+
+  #contact-info-box {
+    grid-column: 2 / 3;
+  }
+
+  #contact-board-container {
+    grid-column: 1 / 3;
+  }
+
+  #contact-director-box img,
+  #contact-secretary-box img {
+    width: initial;
+  }
+
+  #contact-director-box,
+  #contact-secretary-box {
+    display: flex;
+    align-items: center;
+  }
+
+  #contact-form {
+    max-width: 70%;
+    margin: 0 auto;
+  }
+
+  /*******************************************************************************************************************/
+
+  footer {
+    margin-top: 4rem;
+  }
+
+  footer #footer-main-box1 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+  }
+
+  footer ul {
+    text-align: left;
+  }
+  /*
+  footer {
+    display: flex;
+    flex-direction: column;
+  }
+
+  footer img {
+    width: 7rem;
+  }*/
+/*
+  #footer-main-box1 {
+    display: flex;
+    justify-content: space-around;
+  }*/
+/*
+  #footer-logo-address-box {
+    display: flex;
+  }*/
+
+  #footer-address-box {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: left;
+  }
+
+  #footer-address-box h2 {
+    font-size: 1.1rem;
+  }
+
+  #footer-address-box p {
+    margin-top: 0.4rem;
+  }
+
+  #footer-first-hr {
+    display: none;
+  }
+
+  #footer-email-box {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  #footer-email-box p {
+    padding: 0.2rem;
+  }
+
+  #footer-main-box2 {
+    margin: 3rem;
+  }
+
+  #footer-e-mail-address {
+    font-size: initial;
+  }
+
+}

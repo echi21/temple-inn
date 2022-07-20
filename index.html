@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Serif&family=Open+Sans:wght@300&display=swap">
+    
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/small.css">
+    <link rel="stylesheet" href="css/medium.css">
+    <link rel="stylesheet" href="css/large.css">
+    <link rel="icon" href="favicon.ico">
+    <title>Home - Temple Inn & Suites</title>
+    <meta name="author" content="Ezequiel Iannone">
+    <meta name="description" content="Temple Inn & Suites. Visit our page to discover the best place to rest while
+     attending and working on the temple.">
+    <script src="js/script.js" defer></script>
+    <!--<script src="js/windchill.js" defer></script>-->
+    
+  </head>
+  <body>
+    <div id="weather-alert">&#129309;<span>Come join us for the chamber meet and greet Wednesday at 7:00 p.m.</span>
+    </div>
+    <header>
+      <div id="header-box1">
+        <strong><span id="current-date"></span></strong>
+      </div>
+      
+      
+      <div id="header-box2">
+        <!--<div id="logo-title-box">-->
+          <div id="logo-box">
+            <a href="../hotel/">
+              <picture>
+                <source srcset="images/flogo-300x323.jpg">
+                <img src="images/flogo-300x323.jpg" alt="Logo image">
+              </picture>
+            </a>
+          </div>
+    
+          <div id="title-box">
+            <h1>Temple Inn & Suites</h1>
+          </div>
+        <!--</div>-->
+        
+       
+        <div id="social-box">
+          <a href="https://www.facebook.com/" target="_blank">
+            <img src="images/facebook-circle-64x64.png" alt="return">
+          </a>
+          <a href="https://www.linkedin.com/" target="_blank">
+            <img src="images/linkedin-circle-64x64.png" alt="return">
+          </a>
+        </div>
+      </div>
+  
+      <nav>
+        <button id="hamburger-btn"><span>&#9776;</span><span>X</span></button>
+        <ul id="primary-nav">
+          <li class="active"><a href="../hotel/">Home</a></li>
+          <li><a href="discover.html">Temples</a></li>
+          <li><a href="join.html">Reservation</a></li>
+          <li><a href="join.html">Services</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+    
+    
+    <main id="index-main-grid">
+      <div id="hero-box">
+        <h2>Temple Inn & Suites</h2>
+        <picture class="photo-a">
+          <!--<source media="(max-width: 500px)" srcset="images/home/central-square-500x375-70.webp">
+          <source media="(max-width: 800px)" srcset="images/home/central-square-800x600-70.webp">
+          <source media="(max-width: 1200px)" srcset="images/home/central-square-1200x900.webp">-->
+          <img src="images/home/hero-hotel1.jpg" alt="Hotel room">
+        </picture>
+        <a href="join.html"><button class="styling-button">Book Now</button></a>
+      </div>
+  
+      <div id="welcome-text-box">
+        <div>
+          <h2>Welcome to the Temple Inn & Suites!</h2>
+        </div>
+        
+        <div>
+          <h3>Do you need to rest?</h3>
+          <p>Your labor of love in the temple can make you feel tired. That is why we want you to renew your energies
+            by resting in our hotel. Our services will help you stop worrying about temporal matters and focus on your
+            spiritual work. Don't wait to make your <a href="">reservation</a>.
+          </p>
+        </div>
+        <div>
+          <h3>Who are we?</h3>
+          <p>
+            We are a hotel chain headquartered in Bethesda, MD that builds and manages specialized hotel accommodations
+            near temple locations of The Church of Jesus Christ of Latter-day Saints around the world.
+            The owner-operated company caters to temple workers, patrons, and their families by providing
+            specialized services and accommodations that meet their needs.
+          </p>
+        </div>
+      </div>
+  
+      <div id="welcome-image-box">
+        <picture>
+          <img src="images/home/hero-hotel2.jpg" alt="Hotel room two">
+        </picture>
+      </div>
+  
+  
+      <div id="temple-image-box">
+        <picture>
+          <img src="images/home/bs-temple.jpg" alt="Hotel room two">
+        </picture>
+      </div>
+      
+      <div id="temple-text-box">
+        <div>
+          <h2>Buenos Aires Argentina Temple</h2>
+        </div>
+    
+        <div>
+          <h3>What are you waiting to visit the House of the Lord?</h3>
+          <p>
+            Our accommodations and services are available to anyone willing to abide by the terms and policies outlined
+            by the company. We want to help people who come to serve in the temple or participate in events such as
+            sealings, weddings, receptions, youth trips from church units, or even organized travels from church
+            congregations that come to perform vicarious ordinances. We consider ourselves as a haven of comfort and
+            accessibility.
+          </p>
+        </div>
+        <div>
+          <h3>Address</h3>
+          <p>
+            Aut. Tte. Gral. Riccheri N° 4955<br>
+            B1778DUA Ciudad Evita<br>
+            Buenos Aires, Argentina.
+          </p>
+          <h3>Telephone</h3>
+          <p>
+            (54) 11-4693-9700
+          </p>
+        </div>
+      </div>
+      
+      <div id="weather-box" class="div-padding">
+        <h2>Current Weather</h2>
+        <div id="temperature-unit" class="wind-speed-box1">
+          <picture>
+            <source srcset="">
+            <img src="images/home/weather.webp" alt="Weather">
+          </picture>
+          <p><span id="temperature"></span>°C</p>
+        </div>
+        <p id="weather-comment"></p>
+        <hr>
+        <div class="wind-speed-box2">
+          <p class="wind-p1">Humidity: </p><span id="wind-speed"></span><p>%</p>
+        </div>
+        <div class="wind-speed-box2">
+          <p class="wind-p1">Wind Chill: </p><span id="wind-chill"></span><p>°C</p>
+        </div>
+      </div>
+      
+      <div id="weather-forecast-box">
+        <h2>Temperature for the next days, beginning from tomorrow</h2>
+        <div id="weather-forecast">
+        
+        </div>
+      </div>
+      
+      <div id="join-box">
+        
+          <h2>Questions?</h2>
+          <p>
+            Feel free to contact us. We will be happy to answer your concerns.
+          </p>
+          <a href="join.html"><button class="styling-button">Book Now</button></a>
+        
+      </div>
+      
+    </main>
+
+    <footer>
+      <div id="footer-main-box1">
+        <ul>
+          <li><strong>ADDRESS</strong></li>
+          <li>Temple Inn & Suites</li>
+          <li>4800 Montgomery Ln #300</li>
+          <li>Bethesda, MD 20814 U.S.</li>
+          <li class="links-hover-effect"><a href="#header-box1"><strong>Back to the top</strong></a></li>
+        </ul>
+        <hr>
+        <ul>
+          <li><strong>CONTACT INFO</strong></li>
+          <li id="footer-e-mail-address">teminnsuiteshotel@corporation.com</li>
+          <li>801-937-2022</li>
+          <li class="links-hover-effect"><a href="https://goo.gl/maps/x6iPCbz1PKaGqkwe8" target="_blank">
+            <span>&#x1F5FA;</span> <strong>Headquarters</strong></a></li>
+        </ul>
+        <hr>
+        <ul>
+          <li id="find-us"><strong>FIND US</strong></li>
+          <li class="links-hover-effect">
+            <a href="https://www.facebook.com" target="_blank"><strong>Facebook</strong></a>
+          </li>
+          <li class="links-hover-effect">
+            <a href="https://twitter.com" target="_blank"><strong>Twitter</strong></a>
+          </li>
+          <li class="links-hover-effect">
+            <a href="https://https://www.linkedin.com" target="_blank"><strong>Linked In</strong></a>
+          </li>
+        </ul>
+      </div>
+      
+      <div id="footer-main-box2">
+        <hr>
+        <p class="links-hover-effect">
+          Weather data powered by
+          <a href="https://openweathermap.org" target="_blank" id="open-weather-width"><strong>OpenWeather API</strong></a>
+        </p>
+        <hr>
+        <div id="footer-last-line">
+          <p>
+            - &copy; <span id="year"></span>
+            Temple Inn & Suites -
+          </p>
+          <p>
+             - Author: C. Ezequiel Iannone -
+          </p>
+          <p>
+            - <span id="updated-date"></span> -
+          </p>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
