@@ -135,7 +135,7 @@
   }
 
   #find-us {
-    width: 78px;
+    width: 84px;
   }
 
   #footer-main-box2 .links-hover-effect #open-weather-width {
@@ -147,7 +147,7 @@
   #footer-main-box2 a:hover {
     border: 1px dotted var(--secondary-color);
     font-size: 1.1rem;
-    transition: all ease 400ms;
+    transition: all ease 300ms;
   }
 
   #footer-last-line {

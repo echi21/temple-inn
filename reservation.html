@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Serif&family=Open+Sans:wght@300&display=swap">
+    
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/small.css">
+    <link rel="stylesheet" href="css/medium.css">
+    <link rel="stylesheet" href="css/large.css">
+    <link rel="icon" href="favicon.ico">
+    <title>Home - Temple Inn & Suites</title>
+    <meta name="author" content="Ezequiel Iannone">
+    <meta name="description" content="Temple Inn & Suites. Visit our page to discover the best place to rest while
+       attending and working on the temple.">
+    <script src="js/script.js" defer></script>
+    <!--<script src="js/windchill.js" defer></script>-->
+  
+  </head>
+  <body>
+    <div id="weather-alert">☁ <span>The combination of hot temperatures and high humidity will combine to create a
+          dangerous situation. Be careful!</span>
+      <button id="close-weather-alert-button">X</button>
+    </div>
+    <header>
+      <div id="header-box1">
+        <strong><span id="current-date"></span></strong>
+      </div>
+      
+      
+      <div id="header-box2">
+        <!--<div id="logo-title-box">-->
+        <div id="logo-box">
+          <a href="../hotel/">
+            <picture>
+              <source srcset="images/flogo-300x323.jpg">
+              <img src="images/flogo-300x323.jpg" alt="Logo image">
+            </picture>
+          </a>
+        </div>
+        
+        <div id="title-box">
+          <h1>Temple Inn & Suites</h1>
+        </div>
+        <!--</div>-->
+        
+        
+        <div id="social-box">
+          <a href="https://www.facebook.com/" target="_blank">
+            <img src="images/facebook-circle-64x64.png" alt="return">
+          </a>
+          <a href="https://www.linkedin.com/" target="_blank">
+            <img src="images/linkedin-circle-64x64.png" alt="return">
+          </a>
+        </div>
+      </div>
+      
+      <nav>
+        <button id="hamburger-btn"><span>&#9776;</span><span>X</span></button>
+        <ul id="primary-nav">
+          <li><a href="../hotel/">Home</a></li>
+          <li><a href="discover.html">Temples</a></li>
+          <li class="active"><a href="reservation.html">Reservation</a></li>
+          <li><a href="reservation.html">Services</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+    
+    
+    
+    
+    <main id="reservation-main">
+  
+      <div id="membership-descriptions">
+        <picture class="photo-a">
+          <!--<source media="(max-width: 500px)" srcset="images/home/central-square-500x375-70.webp">
+          <source media="(max-width: 800px)" srcset="images/home/central-square-800x600-70.webp">
+          <source media="(max-width: 1200px)" srcset="images/home/central-square-1200x900.webp">-->
+          <img src="images/reservation/one-bed.jpg" alt="Hotel room">
+        </picture>
+      </div>
+      
+      <h2>
+        Have you decided which temple you will be visiting?</h2>
+      <p>Just fill out the form, and we will contact you as soon as possible.</p>
+      
+      <form action="thank-you.html" method="get" id="reservation-form">
+        <fieldset>
+          <legend>Your Information</legend>
+          <label for="first-name" class="top">First Name*
+            <input type="text" name="first-name" id="first-name" required>
+          </label>
+          
+          <label for="last-name" class="top">Last Name*
+            <input type="text" name="last-name" id="last-name" required>
+          </label>
+  
+          <label class="top">Email*
+            <input type="email" name="email" placeholder="your-email@gmail.com" required>
+          </label>
+  
+          <label class="top">Cell Phone / Phone*
+            <input type="tel" name="phone" placeholder="e.g.1235551234" required>
+          </label>
+          
+          <label for="temple-location" class="top">Location*
+          
+          </label>
+          <select name="temple-location" id="temple-location">
+            <option value="">Buenos Aires Argentina Temple</option>
+            <option value="">Salt Lake Temple</option>
+            <option value="">Córdoba Argentina Temple</option>
+            <option value="">Italy Temple</option>
+            <option value="">Sao Paulo Brazil Temple</option>
+            <option value="">Perú Temple</option>
+            <option value="">Puerto Rico Temple</option>
+          </select>
+  
+          <label for="hosting-day" class="top">Arriving Date*
+            <input type="date" name="hosting-day" id="hosting-day" required>
+          </label>
+  
+          <label class="top">Home State or Country
+            <input type="text" name="business-position" pattern="[A-Za-z\s\-]+" minlength="7">
+          </label>
+  
+          <label for="description-text-area" class="label-textarea">Comments or special accommodations
+            <textarea id="description-text-area" name="business-description"
+                      placeholder="Describe something we should know to help you..." cols="10" rows="10" maxlength="500"></textarea>
+          </label>
+
+          <label id="membership-choices-label">Membership Choices</label>
+          <label class="choices">
+            <input class="radios" type="radio" name="member" value="np">
+            NP Membership
+          </label>
+          <label class="choices">
+            <input class="radios" type="radio" name="member" value="bm">
+            Bronze Membership
+          </label>
+          <label class="choices">
+            <input class="radios" type="radio" name="member" value="sm">
+            Silver Membership
+          </label>
+          <label class="choices">
+            <input class="radios" type="radio" name="member" value="gm">
+            Gold Membership
+          </label>
+          
+          <label id="date-time">
+            <input type="hidden" name="full-date">
+          </label>
+        </fieldset>
+  
+        <div id="reservation-double-beds">
+          <picture class="photo-a">
+            <!--<source media="(max-width: 500px)" srcset="images/home/central-square-500x375-70.webp">
+            <source media="(max-width: 800px)" srcset="images/home/central-square-800x600-70.webp">
+            <source media="(max-width: 1200px)" srcset="images/home/central-square-1200x900.webp">-->
+            <img src="images/reservation/two-beds-1200x1518.jpg" alt="Hotel room">
+          </picture>
+        </div>
+        
+        <!--
+          <h2>Membership benefits and prices</h2>
+          <p>At the end of the form you'll be prompted to choose a membership category. Below we present the
+            available options with their prices and benefits:
+          </p>
+          <h3>NP Membership</h3>
+          <p>This is for non-profit organizations and there is no fee. With this option you are welcome to read and
+            receive our news through your e-mail address.
+          </p>
+          
+          <h3>Bronze Membership</h3>
+          <p>This is an affordable option for those who want to experiment and not spend too much. It has a monthly
+            cost of $100. With it, you have the right to receive professional advice for your business, and during
+            the month you can receive 3 training sessions, advertising on our site, and new newsletters.
+          </p>
+          
+          <h3>Silver Membership</h3>
+          <p>This is a prominent option for those who want higher profits. It has a monthly cost of $250. With it,
+            you have the right to receive professional advice for your business 8 hours a day during working days,
+            and during the month you can receive 8 training sessions, 10 advertisements on our site, discounts on
+            events, 4 scheduled accesses to our golf course, newsletters and much more.
+          </p>
+          
+          <h3>Gold Membership</h3>
+          <p>This is the best option for those who want all the benefits we have in our community. It has a monthly
+            cost of $400. With it, you have the right to receive professional advice for your business 8 hours a day
+            throughout the week, and during the month you can receive all the training that is available, 30
+            advertisements on our site, discounts on events, trips and purchases, free scheduled access to our golf
+            course, credits for investments, newsletters and much more.
+          </p>
+        </div>-->
+        
+        <!--<div>
+          <h3>Prices and Benefits</h3>
+          <span id="benefits"></span>
+        </div>-->
+        
+        <input type="submit" value="Join the community" id="reservation-submit-btn">
+      </form>
+      
+    </main>
+
+    <footer>
+      <div id="footer-main-box1">
+        <ul>
+          <li><strong>ADDRESS</strong></li>
+          <li>Temple Inn & Suites</li>
+          <li>4800 Montgomery Ln #300</li>
+          <li>Bethesda, MD 20814 U.S.</li>
+          <li class="links-hover-effect"><a href="#header-box1"><strong>Back to the top</strong></a></li>
+        </ul>
+        <hr>
+        <ul>
+          <li><strong>CONTACT INFO</strong></li>
+          <li id="footer-e-mail-address">teminnsuiteshotel@corporation.com</li>
+          <li>801-937-2022</li>
+          <li class="links-hover-effect"><a href="https://goo.gl/maps/x6iPCbz1PKaGqkwe8" target="_blank">
+            <span>&#x1F5FA;</span> <strong>Headquarters</strong></a></li>
+        </ul>
+        <hr>
+        <ul>
+          <li id="find-us"><strong>FIND US</strong></li>
+          <li class="links-hover-effect">
+            <a href="https://www.facebook.com" target="_blank"><strong>Facebook</strong></a>
+          </li>
+          <li class="links-hover-effect">
+            <a href="https://twitter.com" target="_blank"><strong>Twitter</strong></a>
+          </li>
+          <li class="links-hover-effect">
+            <a href="https://https://www.linkedin.com" target="_blank"><strong>Linked In</strong></a>
+          </li>
+        </ul>
+      </div>
+    
+      <div id="footer-main-box2">
+        <hr>
+        <p class="links-hover-effect">
+          Weather data powered by
+          <a href="https://openweathermap.org" target="_blank" id="open-weather-width"><strong>OpenWeather API</strong></a>
+        </p>
+        <hr>
+        <div id="footer-last-line">
+          <p>
+            - &copy; <span id="year"></span>
+            Temple Inn & Suites -
+          </p>
+          <p>
+            - Author: C. Ezequiel Iannone -
+          </p>
+          <p>
+            - <span id="updated-date"></span> -
+          </p>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

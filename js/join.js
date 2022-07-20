@@ -1,6 +1,6 @@
 
 /*********************************************************************************************************************/
-// setting the messages fot the different membership options for the join.html page
+// setting the messages fot the different membership options for the reservation.html page
 /*const nonProfit = `This is for non-profit organizations and there is no fee. With this option you are welcome to read
 and receive our news through your e-mail address.`;
 

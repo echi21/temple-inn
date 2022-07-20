@@ -77,8 +77,12 @@ document.getElementById("current-date").textContent = `${dayName}, ${numberDay} 
 
 // Displays a banner on Mondays or Tuesdays only at the very top of the page
 let banner = document.querySelector("#weather-alert");
-if (dayName.toLowerCase() === "monday" || dayName.toLowerCase() === "tuesday") {
+if (dayName.toLowerCase() === "monday" || dayName.toLowerCase() === "wednesday" || dayName.toLowerCase() === "friday") {
   banner.style.display = "block";
+}
+
+document.getElementById("close-weather-alert-button").onclick = () => {
+  document.getElementById("weather-alert").style.display = "none";
 }
 
 /*-------------------------------------------------------------------------------------------------------------------*/
@@ -182,27 +186,6 @@ main(WEB_ADDRESS);
 
 /*-------------------------------------------------------------------------------------------------------------------*/
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/********************************************************************************************************************/
 //Toggle the menu when the web page is in small size
 function toggleMenu() {
   document.getElementById("primary-nav").classList.toggle("open");
@@ -214,8 +197,6 @@ x.onclick = toggleMenu;
 
 /*-------------------------------------------------------------------------------------------------------------------*/
 
-
-/*********************************************************************************************************************/
 // gets the first span tag and sets the year.
 document.querySelector("#year").textContent = year.toString();
 
@@ -225,3 +206,4 @@ let lastUpdate = document.querySelector("#updated-date");
 let lastChangeDate = document.lastModified;
 // puts the previous information in the second span.
 lastUpdate.textContent = `Last Modification: ${lastChangeDate}`;
+/*-------------------------------------------------------------------------------------------------------------------*/

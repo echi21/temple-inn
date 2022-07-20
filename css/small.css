@@ -56,6 +56,26 @@ header {
   display: none;
 }
 
+#close-weather-alert-button {
+  display: block;
+  margin: 1rem auto 0 auto;
+  width: 4rem;
+  font-weight: bold;
+  color: var(--primary-color);
+  background-color: transparent;
+  font-size: 1.2rem;
+  border-color: var(--primary-color);
+  padding: .2rem;
+  border-radius: .5rem;
+}
+
+#close-weather-alert-button:hover {
+  cursor: pointer;
+  color: var(--secondary-color);
+  background-color: var(--primary-color);
+}
+
+
 #header-box1 {
   color: var(--secondary-color);
   text-align: center;
@@ -648,27 +668,28 @@ nav ul.open {
   margin-left: 1rem;
 }
 
-/*------------------------JOIN.HTML----------------------*/
-#join-main {
+/*------------------------RESERVATION.HTML----------------------*/
+#reservation-main {
   max-width: 90%;
   margin: 0 auto;
 }
 
-#join-main h2, #join-main h3 {
+#reservation-main h2,
+#reservation-main h3 {
   text-align: center;
   margin-top: 2rem;
   padding: .5rem;
 }
 
-#join-main h2 {
+#reservation-main h2 {
   font-size: 1.8rem;
 }
 
-#join-main h3 {
+#reservation-main h3 {
   font-size: 1.4rem;
 }
 
-#join-main p {
+#reservation-main p {
   font-size: 1.1rem;
   text-align: center;
   padding: .5rem;
@@ -676,12 +697,12 @@ nav ul.open {
 
 /*--------------------------form-------------------------*/
 
-#join-form,
+#reservation-form,
 #contact-form {
   margin: 2rem 0;
 }
 
-#join-form fieldset,
+#reservation-form fieldset,
 #contact-form fieldset {
   padding: 2rem;
   border: 2px solid var(--secondary-color);
@@ -690,11 +711,21 @@ nav ul.open {
 #membership-descriptions,
 .contact-board-of-info {
   margin: 1.65rem auto 1rem auto;
-  padding: .5rem;
+  /*padding: .5rem;*/
   border: 2px solid var(--secondary-color);
 }
 
-#join-form legend,
+#reservation-form #membership-descriptions {
+  overflow: hidden;
+}
+
+#membership-descriptions img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+#reservation-form legend,
 #contact-form legend {
   color: var(--nav-link-color);
   margin: 0 1rem;
@@ -702,11 +733,11 @@ nav ul.open {
   font-size: 1.2rem;
 }
 
-#join-form label {
+#reservation-form label {
   display: block;
 }
 
-#join-form label.top input,
+#reservation-form label.top input,
 #contact-form label.top input {
   display: block;
   width: 100%;
@@ -718,23 +749,23 @@ nav ul.open {
   border: 1px solid var(--accent1-color);
 }
 
-#join-form label.top input:required,
+#reservation-form label.top input:required,
 #contact-form label.top input:required {
   border-left: .5rem solid red;
 }
 
-#join-form label.top input:required:valid,
+#reservation-form label.top input:required:valid,
 #contact-form label.top input:required:valid {
   border: 1px solid var(--accent1-color);
 }
 
-#join-form .label-textarea,
+#reservation-form .label-textarea,
 #contact-form .label-textarea {
   display: flex;
   flex-direction: column;
 }
 
-#join-form #description-text-area,
+#reservation-form #description-text-area,
 #contact-form #description-text-area {
   height: 12rem;
   margin-top: .1rem;
@@ -743,11 +774,11 @@ nav ul.open {
   resize: none;
 }
 
-#join-form #membership-choices-label {
+#reservation-form #membership-choices-label {
   margin-bottom: 1rem;
 }
 
-#join-form label.choices,
+#reservation-form label.choices,
 #contact-form label.choices {
   display: block;
   max-width: 26rem;
@@ -756,7 +787,7 @@ nav ul.open {
 }
 
 /*----------------------form's buttons---------------------*/
-#join-form #join-submit-btn,
+#reservation-form #reservation-submit-btn,
 #contact-form #contact-submit-btn {
   display: block;
   border: none;
@@ -863,8 +894,9 @@ nav ul.open {
 /*-------------------------footer------------------------*/
 footer {
   margin-top: 2rem;
-  text-align: center;
   padding: 2rem;
+  text-align: center;
+  color: var(--secondary-color);
   box-shadow: 1px 1px 10px var(--accent2-color);
 }
 

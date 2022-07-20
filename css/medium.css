@@ -58,6 +58,7 @@
   nav {
     padding: .5rem;
     order: 0;
+    box-shadow: 1px 1px 10px var(--accent2-color);
     /*text-align: right;*/
   }
 
@@ -165,14 +166,18 @@
     justify-content: center;
   }*/
 
+  #join-main {
+    width: 90%;
+  }
+
   #join-box p {
     margin-top: 4rem;
   }
 
-
+/*
   #join-box button {
     width: 10rem;
-  }
+  }*/
 
 
 /*--------------------DISCOVER.HTML--------------------*/
@@ -228,15 +233,16 @@
   }
 
   /*-----------------------JOIN.HTML---------------------*/
-  #join-main {
-    max-width: 80%;
-  }
 
-  #join-form {
+  #reservation-main {
     display: grid;
-    grid-template-columns: 1fr 1fr .5fr;
+    grid-template-columns: 1fr 1fr 1fr;
     grid-gap: 1rem;
     justify-content: center;
+  }
+
+  #reservation-main {
+    
   }
 
   #join-form fieldset {
@@ -245,14 +251,25 @@
   }
 
   #join-form #membership-descriptions {
+    grid-column: 1 / 4;
+  }
+
+  #reservation-double-beds {
     grid-column: 2 / 4;
+    overflow: hidden;
+  }
+
+  #membership-descriptions img,
+  #reservation-double-beds img {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
   }
 
   #join-form #join-submit-btn {
     grid-column: 1 / 2;
   }
 
-  #membership-descriptions,
   .contact-board-of-info {
     padding: 2rem;
   }

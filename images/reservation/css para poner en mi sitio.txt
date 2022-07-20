@@ -1,0 +1,48 @@
+efectos css:
+
+en imágenes hacer
+
+transition: all 400ms;
+(para que los íconos se agranden al hacer hover sin hacerlo de prepo)
+
+
+
+efecto sobre la imagen hero para ir haciendo un acercamiento:
+
+animation-name: slowSize;
+animation-duration: 200s;
+animation-iteration-count: infinite;
+
+
+
+en un box contenedor de una imagen puedo ponerle el atributo siguiente
+para que al hacer un hover y por ejemplo agrandar el tamaño de la imagen,
+esta se aumente dentro de su contenedor y no rompa el flujo.
+
+overflow: hidden;
+
+
+
+
+Para cerrar un banner:
+
+<div id="banner" class="banner">
+    <button id="close-button" class="close-button" aria-label="close" tabindex="0">✕</button>
+    <div>
+        <h1>Notice</h1>
+        Lorem ipsum dolor sit amet.
+    </div>
+</div>
+
+
+document.getElementById("close-button").onclick = () => {
+    document.getElementById("banner").style.display = "none";
+}
+
+
+Preguntas banco provincia.
+Nombre de su club favorito: Boca Junior
+Nombre de su amigo de la infancia: Mariana
+Cuál es su personaje favorito: Capitán América
+Película favorita: Avengers
+Libro Favorito: El libro de mormón
