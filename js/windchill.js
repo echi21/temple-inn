@@ -14,7 +14,7 @@ async function main(url) {
     await fetch(url)
       .then(tryingToConvertResponseToJson)
       .then((jsonResult) => {
-        console.log(jsonResult);
+        //console.log(jsonResult);
         calculateAndSetValues(jsonResult);
         renderContent();
       });
@@ -69,7 +69,7 @@ function calculateAndSetValues(weatherData) {
     }
   });
 
-  console.log(forecastTemp);
+  //console.log(forecastTemp);
   weatherAlert = weatherData;
 
 }

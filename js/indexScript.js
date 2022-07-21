@@ -73,6 +73,18 @@ const numberDay = currentDate.getDate();
 
 document.getElementById("current-date").textContent = `${dayName}, ${numberDay} ${monthName}, ${year}`;
 
+/*********************************************************************************************************************/
+
+// Displays a banner on Mondays or Tuesdays only at the very top of the page
+let banner = document.querySelector("#weather-alert");
+if (dayName.toLowerCase() === "monday" || dayName.toLowerCase() === "wednesday" || dayName.toLowerCase() === "friday") {
+  banner.style.display = "block";
+}
+
+document.getElementById("close-weather-alert-button").onclick = () => {
+  document.getElementById("weather-alert").style.display = "none";
+}
+
 /*-------------------------------------------------------------------------------------------------------------------*/
 
 //Toggle the menu when the web page is in small size

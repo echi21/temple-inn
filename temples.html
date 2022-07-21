@@ -12,15 +12,17 @@
     <link rel="stylesheet" href="css/medium.css">
     <link rel="stylesheet" href="css/large.css">
     <link rel="icon" href="favicon.ico">
-    <title>Contact - Temple Inn & Suites</title>
+    <title>Reservation - Temple Inn & Suites</title>
     <meta name="author" content="Ezequiel Iannone">
-    <meta name="description" content="Contact us just filling out a short form, calling or just visiting our offices.">
+    <meta name="description" content="Fill out our form and make your reservation in the best hotel, Temple
+      Inn & Suites. We promise a comfortable place and excellent services.">
     <script src="js/script.js" defer></script>
+    <script src="js/temples.js" defer></script>
   
   </head>
   <body>
     <div id="weather-alert">☁ <span>The combination of hot temperatures and high humidity will combine to create a
-            dangerous situation. Be careful!</span>
+              dangerous situation. Be careful!</span>
       <button id="close-weather-alert-button">X</button>
     </div>
     <header>
@@ -30,6 +32,7 @@
       
       
       <div id="header-box2">
+        
         <div id="logo-box">
           <a href="../hotel/">
             <picture>
@@ -58,76 +61,33 @@
         <button id="hamburger-btn"><span>&#9776;</span><span>X</span></button>
         <ul id="primary-nav">
           <li><a href="../hotel/">Home</a></li>
-          <li><a href="temples.html">Temples</a></li>
+          <li class="active"><a href="temples.html">Temples</a></li>
           <li><a href="reservation.html">Reservation</a></li>
           <li><a href="services.html">Services</a></li>
-          <li class="active"><a href="contact.html">Contact</a></li>
+          <li><a href="contact.html">Contact</a></li>
         </ul>
       </nav>
     </header>
     
-    <main id="contact-main">
-      
-      <h2>Contact the Temple Inn & Suites</h2>
-      <p>We provide you with the necessary information so that you can speak with customer service employees in our
-        office, call, or simply fill out a form to receive news.
-      </p>
-      
-      <div id="contact-grid">
-        
-        <div id="contact-image-box">
-          <picture>
-            <img src="images/contact/headquarters.jpg" alt="People from the team">
-          </picture>
+    <main id="directory-main">
+      <h2>Business Directory</h2>
+      <div class="menu">
+        <div>
+          <button id="grid-btn"><img src="images/companies/grid-48-y.png" alt="Grid" title="Grid"></button>
+          <p>Show Grid</p>
         </div>
-        
-        <div id="contact-info-box">
-          <h3 class="">---- VISIT US ----</h3>
-          <div class="contact-info-container">
-            <h4>Address</h4>
-            <p>
-              #696, Street 20 <br>
-              Balcarce, Buenos Aires
-            </p>
-            <h4>Office Hours</h4>
-            <p>
-              Monday – Friday:<br>
-              9:00 a.m. to 5:00 p.m.
-            </p>
-            <h4>E-mail</h4>
-            <p>bcchamber@balcarce.com</p>
-            <h4>Phone numbers</h4>
-            <p>
-              (02266) 42-2993<br>
-              (+54) (2266) 51-3579
-            </p>
-          </div>
+        <div>
+          <button id="list-btn"><img src="images/companies/list-48-y.png" alt="List" title="List"></button>
+          <p>Show List</p>
         </div>
       </div>
-      <div>
-        <h3>Get in touch</h3>
+      
+      <div id="directory-cards">
+        
+        <!--here will be placed all the section elements-->
+        
       </div>
-      <form action="thank-you.html" method="get" id="contact-form">
-        <fieldset>
-          <label for="names" class="top">Names*
-            <input type="text" name="names" id="names" required>
-          </label>
       
-          <label for="last-name" class="top">Last Name*
-            <input type="text" name="last-name" id="last-name" required>
-          </label>
-      
-          <label class="top">Email*
-            <input type="email" name="email" placeholder="your-email@gmail.com" required>
-          </label>
-      
-          <label for="description-text-area" class="label-textarea">Comment/Questions (optional)
-            <textarea id="description-text-area" name="business-description"
-                      placeholder="Describe briefly your business..." cols="10" rows="10" maxlength="500"></textarea>
-          </label>
-        </fieldset>
-        <input type="submit" value="Receive News" id="contact-submit-btn">
-      </form>
     </main>
 
     <footer>
